@@ -121,8 +121,8 @@ button:hover {
 }
 
 #student-table tr:nth-child(even) {
-    background-color: #f8f8f8;
-}S
+    background-color: #f8f8f8;}
+
 
 .action-buttons button {
     padding: 5px 10px;
