@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration System</title>
+    <meta name="description" content="A fully responsive student registration system.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Student Registration System</h1>
+            <p>Smart Registration System, The central link to your Academic journey.</p>
+        </header>
+
+        <main>
+            <section class="registration-form-section">
+                <h2>Register Student</h2>
+                <form id="student-form">
+                    <div class="form-group">
+                        <label for="student-name">Student Name:</label>
+                        <input type="text" id="student-name" required placeholder="Enter student name">
+                        <span class="error-message" id="name-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="student-id">Student ID:</label>
+                        <input type="text" id="student-id" required placeholder="Enter student ID">
+                        <span class="error-message" id="id-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="student-email">Email ID:</label>
+                        <input type="email" id="student-email" required placeholder="Enter student email">
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="student-contact">Contact Number:</label>
+                        <input type="tel" id="student-contact" required placeholder="Enter 10 digit contact number">
+                        <span class="error-message" id="contact-error"></span>
+                    </div>
+                    
+                    <button type="submit" id="submit-button">Add Record</button>
+                </form>
+            </section>
+
+            <section class="display-records-section">
+                <h2>Registered Students</h2>
+                <div class="table-wrapper" id="record-table-wrapper">
+                    <table id="student-table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Student ID</th>
+                                <th>Email ID</th>
+                                <th>Contact No.</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="student-list">
+                            </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
